@@ -37,6 +37,14 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(BG);
+
+  fill(0)
+  textFont("Gabriola");
+  textSize(65);
+  text("NEWTONS CRADLE", 95, 100);
+  textSize(30);
+  text("KEYS : ← & →", 30, 480);
+  text("~DhRiTi♥", 490, 480);
   
 Engine.update(engine);
 
@@ -55,10 +63,10 @@ Engine.update(engine);
   drawSprites();
 }
 function keyPressed(){
-	if(keyCode === UP_ARROW){
+	if(keyCode === LEFT_ARROW){
 		Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-700,y:600})
 	}
-	if(keyCode === DOWN_ARROW){
+	if(keyCode === RIGHT_ARROW){
 		Matter.Body.applyForce(bob5.body,bob5.body.position,{x:700,y:-600})
 	}
 }
