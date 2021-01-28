@@ -1,4 +1,4 @@
-//Ground blu-print and display
+//fixed platform blu-print and display
 class Platform {
     constructor(x, y, width, height){
         this.body = Bodies.rectangle(x, y, width, height, {isStatic: true});
