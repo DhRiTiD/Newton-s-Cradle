@@ -1,4 +1,4 @@
-//Paper blu-print and display
+//bob blu-print and display
 class Bob{
     constructor(x, y, radius){
         this.body = Bodies.circle(x, y, radius, {'restitution': 1.1, 'friction': 0.1, 'density': 4.5});
